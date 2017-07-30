@@ -1,0 +1,134 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html::-webkit-scrollbar { 
+    display: none; 
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+.wrapper {
+    width: 100%;
+}
+
+#left-pane {
+    float:left;
+    width: 25%;
+    height: 100%;
+    position:absolute;
+    background-color: #fff9c4;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#left-pane > .items {
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+
+#left-pane > .items > li {
+    width: auto;
+    padding: 15px;
+    border-bottom: 1px solid #d8d1a1;
+}
+
+#left-pane > .items > li:hover {
+    background-color: #f5df68;
+    transition: .8s ease-out;
+}
+
+
+#left-pane::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+    scroll-behavior: smooth;
+}
+
+#left-pane::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#left-pane::-webkit-scrollbar-button {
+    background-color: #555;
+}
+
+#left-pane::-webkit-scrollbar-button:decrement {
+    background-color:#010101;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#left-pane::-webkit-scrollbar-button:increment {
+    background-color:#010101;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#left-pane::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #f5df68;
+}
+
+.search {
+    width: 75%;
+    padding:10px;
+    margin:10px 10px 15px 10px;
+    border: 2px solid rgb(229, 151, 0);
+    border-radius: 5px;
+    outline:none;
+}
+
+#right-pane {
+    float: right;
+    width: 75%;
+    height: 100%;
+    padding: 0px;
+    margin:0px;
+    position: relative;
+}
+
+#right-pane > .title {
+    padding: 15px;
+    margin:0px;
+}
+
+#right-pane > .note-body {
+    padding: 5px 5px 5px 15px;
+    
+}
+
+#right-pane > .buttons {
+    padding: 15px;
+    margin:0px;
+}
+
+#right-pane > .buttons > .add {
+    padding: 10px;
+    color: #fff;
+    background-color: #3b5998;
+    border: 1px solid #5c7999;
+    border-radius: 3px;
+}
+
+#right-pane > .buttons > .delete {
+    padding: 10px;
+    color: #fff;
+    background-color: #e53935;
+    border: 1px solid #ff7777;
+    border-radius: 3px;
+}
+
+#right-pane > .buttons > .backup {
+    padding: 10px;
+    color: #fff;
+    background-color: #009688;
+    border: 1px solid #009688;
+    border-radius: 3px;
+}

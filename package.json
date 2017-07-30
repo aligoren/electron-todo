@@ -1,0 +1,23 @@
+{
+  "name": "todoapp",
+  "productName": "A simple todo app with Electron and SQLite 3",
+  "version": "0.1.0",
+  "main": "home.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo",
+    "electron",
+    "todo",
+    "todolist"
+  ],
+  "author": "Ali GÖREN",
+  "license": "ISC",
+  "description": "A simple todo app with Electron and SQLite 3",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
